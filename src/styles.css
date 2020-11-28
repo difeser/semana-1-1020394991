@@ -114,9 +114,12 @@ body{
     display: flex;
     justify-content: space-evenly;
     text-align: center;
+    
 }
 
 .imagenteam{
+    margin-top: 6px;
+    padding: 2px;
     width: 200px;
 	height: 240px;
 }
