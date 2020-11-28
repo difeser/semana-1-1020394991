@@ -1,24 +1,129 @@
 body{
     font-family: sans-serif;
     width: 1200px;
+    height: 2000px;
+    margin-right: auto;
+    margin-left: auto;
+    
 }
 
 .header{
+    background-color:chocolate;
+    flex-direction: column;
+  
+}
+
+.barra-superior{
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.titulo-principal{
+    width: 50%;
     background-color: chocolate;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contenedor-menu{
+    width: 50%;
+    background-color:  chocolate;
+    
+}
+
+.menu-principal{
+    
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.menu-principal__item > a{
+    text-decoration: none;
+}
+
+.menu-principal__item > a :hover{
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.banner{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner__imagen{
+    width: 100%;
 }
 
 .servicios{
-    background-color: rgb(84, 30, 210);
+    background-color: rgb(138, 173, 8);
+    display:flex;
+    justify-content: space-evenly;
+    text-align: center;
 }
-.noticias{
 
+.imagenservicios{
+    width: 200px;
+	height: 250px;
+}
+
+
+ .noticias{
+    background-color: rgb(131, 89, 230);
+    display: -webkit-inline-flex;
+    
+    justify-content: space-between;
+    text-align: justify;
+    margin-right: auto;
+    margin-left: auto;
+} 
+
+.noticia{
+    width: 570px;
+    height: 300PX;
+    
+    display: -webkit-flex; 
+    justify-content: space-between;
+    text-align: center;
+    margin:5px;
+}
+
+
+
+.noticia__imagen{
+    width: 200px;
+    height: 200PX;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 10px;
+
+}
+
+.bloque1{
+    width: 50%;
+    height: 100%;
+    display: flexbox;
+    margin:10px;
 }
 
 .miembros{
+    background-color: rgb(59, 50, 78);
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
 
+.imagenteam{
+    width: 200px;
+	height: 240px;
 }
 
 .footer{
-    
+    background-color: rgb(65, 14, 173); 
+    display: flex;
+    justify-content: space-between;
 }
 

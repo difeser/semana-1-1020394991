@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reto semana 1</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
@@ -12,7 +13,7 @@
             <div class="titulo-principal">
                 <h1>Reto semana 1</h1>
             </div>
-            <nav>
+            <nav class="contenedor-menu">
                 <ul class="menu-principal">
                     <li class="menu-principal__item"><a href="#">Inicio</a></li>
                     <li class="menu-principal__item"><a href="#servives">Servicios</a></li>
@@ -23,29 +24,30 @@
         </section>
 
         <!-- baner -->
-        <section>
-            <img src="../img/conjuntoimagenes1.jpg" alt="imagen banner">
+        <section class="banner">
+            <img class="banner__imagen" src="../img/conjuntoimagenes1.jpg" alt="imagen banner">
         </section>
     </header>
     <main>
         <!-- inicio seccion servicios -->
-        <section id="services" class="services">
-            <div>
+        <section id="services" class="servicios">
+            <div class="servicios__contenedor">
                 <h2>Barril asador</h2>
-                <img src="../img/asador_de_barril.jpg" alt="imagen servicios">
+                <img class="imagenservicios" src="../img/asador_de_barril.jpg" alt="imagen servicios">
                 <p>Este barril funciona con arena para absorber la grasa de los alimentos y los residuos que va soltando la carne, que es lo que genera el humo en los asadores</p>
                 <a href="http://www.steakmarketcolombia.com/page4.html">Ver mas Barril</a>
             </div>
 
-            <div>
+            <div class="servicios__contenedor">
                 <h2>Parrilla</h2>
-                <img src="../img/parrilla.jpg" alt="imagen servicios">
+                <img class="imagenservicios" src="../img/parrilla.jpg" alt="imagen servicios">
                 <p>La parrilla o asador es un utensilio de hierro con forma de rejilla que se sitúa encima del fuego y encima de él lo que se ha de asar o tostar.</p>
                 <a href="https://es.wikipedia.org/wiki/Parrilla#:~:text=La%20parrilla%20o%20asador%20es,del%20fuego%20o%20las%20brasas.">Ver mas Parrilla</a>
             </div>
-            <div>
+
+            <div class="servicios__contenedor">
                 <h2>Utensilios</h2>
-                <img src="../img/utensilios.jpg" alt="imagen servicios">
+                <img class="imagenservicios" src="../img/utensilios.jpg" alt="imagen servicios">
                 <p>Por supuesto, no querrás quemarte los dedos, utilizar pinzas siempre es seguro y te permitirá tener mejor control en tu parrilla. Elige las pinzas adecuadas de acero inoxidable para no contaminar tus alimentos</p>
                 <a href="https://www.fuegodirecto.com/blog/post/10-utensilios-que-son-la-herramienta-perfecta-para-la-parrillada/">Ver mas Utensilios</a> 
             </div>
@@ -53,52 +55,68 @@
         <!-- FIN seccion servicios -->
 
         <section id="news" class="noticias" >
-            <div>
-                <div>
-                    <div>
-                        <img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/FC20/production/_115244546_gettyimages-458178200.jpg" alt="imagen news">
+            <div class="bloque1">
+                <div class="noticia">
+                    
+                    <img class="noticia__imagen"src="https://ichef.bbci.co.uk/news/800/cpsprodpb/FC20/production/_115244546_gettyimages-458178200.jpg" alt="imagen news">
+                    <div >
+                        <h2>Muere Maradona</h2>
+                        <hr>                   
+                        <p>Diego Armando Maradona, el ídolo argentino que murió este miércoles de un paro cardiorrespiratorio, pudo haber sido el jugador de fútbol más grande de la historia. Pero fue mucho más que eso.</p>
+                        <a href="https://www.bbc.com/mundo/noticias-america-latina-54833389">Leer noticia completa>></a>
                     </div>
-                    <h2>Muere Maradona</h2>
-                    <hr>                   
-                    <p>Diego Armando Maradona, el ídolo argentino que murió este miércoles de un paro cardiorrespiratorio, pudo haber sido el jugador de fútbol más grande de la historia. Pero fue mucho más que eso.</p>
-                    <a href="https://www.bbc.com/mundo/noticias-america-latina-54833389">Leer noticia completa>></a>
                 </div>
-                <div>
-                        <div>
-                            <img src="https://www.elcolombiano.com/documents/10157/0/580x387/0c11/580d365/none/11101/JNLJ/image_content_36749635_20201127190919.jpg" alt="imagen news">
-                        </div>
+                
+                
+                <div class="noticia">
+                        
+                    <img class="noticia__imagen" src="https://www.elcolombiano.com/documents/10157/0/580x387/0c11/580d365/none/11101/JNLJ/image_content_36749635_20201127190919.jpg" alt="imagen news">
+                    <div >   
                         <h2>Colombia escuchará a su primera filarmónica indígena</h2>
                         <hr>                   
                         <p>Vive en el resguardo indígena Emberá Chamí en Valparaíso, Antioquia. Tiene 14 años y es uno de los pocos niños de su comunidad que tiene su propio instrumento, un violín.</p>
                         <a href="https://www.elcolombiano.com/cultura/musica/la-historia-de-la-orquesta-filarmonica-indigena-embera-chami-PC14162940">Leer noticia completa>></a>
+                    </div>
                 </div>
             </div>
             
-            <div>
-                <div>
-                    <div>
-                        <img src="https://www.elcolombiano.com/documents/10157/0/580x404/0c0/580d365/none/11101/BXFC/image_content_36750459_20201127173557.jpg" alt="imagen news">
+            <div class="bloque1">
+                <div class="noticia">
+                    
+                    <img class="noticia__imagen" src="https://www.elcolombiano.com/documents/10157/0/580x404/0c0/580d365/none/11101/BXFC/image_content_36750459_20201127173557.jpg" alt="imagen news">
+                    <div >
+                        <h2>Nacional Vs America</h2>
+                        <hr>                   
+                        <p>Nacional tuvo que remar contra la adversidad desde que regresó tras el largo confinamiento: resultados regulares, un fútbol poco vistoso, la eliminación de la Copa Sudamericana, las lesiones, la salida del técnico Osorio, las decisiones de la Dimayor, y ahora los contagios.</p>
+                        <a href="https://www.elcolombiano.com/deportes/atletico-nacional/con-el-lastre-del-covid-nacional-se-cita-con-los-diablos-rojos-LC14162889">Leer noticia completa>></a>
                     </div>
-                    <h2>Nacional Vs America</h2>
-                    <hr>                   
-                    <p>Nacional tuvo que remar contra la adversidad desde que regresó tras el largo confinamiento: resultados regulares, un fútbol poco vistoso, la eliminación de la Copa Sudamericana, las lesiones, la salida del técnico Osorio, las decisiones de la Dimayor, y ahora los contagios.</p>
-                    <a href="https://www.elcolombiano.com/deportes/atletico-nacional/con-el-lastre-del-covid-nacional-se-cita-con-los-diablos-rojos-LC14162889">Leer noticia completa>></a>
                 </div>
-                <div>
+
+                <div class="noticia">
+                    
+                    <img class="noticia__imagen" src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1brzRl.img?h=900&w=1598&m=6&q=60&o=f&l=f" alt="imagen news">
                     <div>
-                        <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1brzRl.img?h=900&w=1598&m=6&q=60&o=f&l=f" alt="imagen news">
+                        <h2>COVID19: EE. UU. sobrepasa los 13 millones de casos</h2>
+                        <hr>                   
+                        <p>En solo 24 horas, el líder de los contagios y fallecimientos a nivel mundial registró 205.557 nuevas infecciones, llevándolo a incrementar su total de casos. En cuanto a las cifras, Europa sigue sus pasos en la segunda ola del virus, si bien las medidas y los confinamientos están haciendo que los datos diarios desciendan poco a poco.</p>
+                        <a href="https://www.msn.com/es-co/noticias/otras/supernumbercovid19hoy-ee-uu-sobrepasa-los-13-millones-de-casos-tras-batir-su-r%c3%a9cord-diario/ar-BB1brzRu">Leer noticia completa>></a>
                     </div>
-                    <h2>COVID19: EE. UU. sobrepasa los 13 millones de casos</h2>
-                    <hr>                   
-                    <p>En solo 24 horas, el líder de los contagios y fallecimientos a nivel mundial registró 205.557 nuevas infecciones, llevándolo a incrementar su total de casos. En cuanto a las cifras, Europa sigue sus pasos en la segunda ola del virus, si bien las medidas y los confinamientos están haciendo que los datos diarios desciendan poco a poco.</p>
-                    <a href="https://www.msn.com/es-co/noticias/otras/supernumbercovid19hoy-ee-uu-sobrepasa-los-13-millones-de-casos-tras-batir-su-r%c3%a9cord-diario/ar-BB1brzRu">Leer noticia completa>></a>
                 </div>
             </div>
         </section>
 
         <section id="team" class="miembros">
             <div>
-                <img src="../img/FotoDiegoSerna.jpg" alt="imagen team">
+                <img class="imagenteam" src="../img/FotoDiegoSerna.jpg" alt="imagen team">
+                <h3>Diego Fernando Serna Restrepo</h3>
+                <p><b>Institución Educativa: </b>Universidad de Antioquia</p>
+                <p><b>Edad: </b>34 años</p>
+                <p><b>Pastiempos: </b>Futbol, Musica, Programación</p>
+
+            </div>
+
+            <div>
+                <img class="imagenteam" src="../img/FotoDiegoSerna.jpg" alt="imagen team">
                 <h3>Diego Fernando Serna Restrepo</h3>
                 <p><b>Institución Educativa: </b>Universidad de Antioquia</p>
                 <p><b>Edad: </b>34 años</p>
